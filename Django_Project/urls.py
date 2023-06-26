@@ -23,3 +23,10 @@ urlpatterns = [
     path('college/',include('college.urls')),
     path('',RedirectView.as_view(url='college/')),
 ]
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('college/',include('college.urls')),
+    path('',RedirectView.as_view(url='college/')),
+    path('',RedirectView.as_view(url='college/')),
+
+]
